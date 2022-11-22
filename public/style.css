@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Koulen&family=Poppins:wght@300&display=swap');
+body {
+    font-family: 'Koulen', cursive;
+    background-color: #F5F0BB;
+}
+
+#seleccion-mascota {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.titulo {
+    color: rgb(236, 112, 74);
+    font-size: 60px;
+}
+
+.subtitulo {
+    color: rgb(236, 112, 74);
+    font-size: 30px;
+}
+
+
+.tarjetas, .tarjetas-ataques {
+    display: flex;
+    gap: 10px;
+}
+
+.tarjeta-de-elements {
+    width: 150px;
+    height: 100px;
+    background: honeydew;
+    padding: 10px;
+    box-sizing: border-box;
+    margin: 10px;
+    border: 1px solid; color: rgb(12, 12, 8);
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.tarjeta-de-elements img {
+    width: 80px;
+}
+
+#boton-mascota {
+    width: 150px;
+    height: 35px;
+    border-radius: 10px;
+    background:honeydew;
+    border: 1px solid black;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 15px;
+}
+
+input {
+    display: none;
+}
+
+input:checked + label {
+    background-color: aqua;
+}
+
+#seleccion-ataque {
+    flex-direction: column;
+    align-items: center;
+}
+
+.boton-de-ataque {
+    width: 100px;
+    border-color: black;
+    background-color: honeydew ;
+    font-family: 'Koulen', cursive;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 15px;
+    color: black;
+    font-size: 15px;
+}
+
+#mensajes {
+    width: 280px;
+    background: coral;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#boton-reiniciar {
+    border: none;
+    color: white;
+    background-color: transparent
+}
+
+.ataque {
+    display: grid;
+    grid-template-columns: 100px 100px;
+}
+
+#vidas-jugador, #vidas-enemigo {
+    font-size:32px;
+    margin-bottom: 0;
+}
+
+.ataques-jugador, .ataques-enemigo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#ver-mapa {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#ver-mapa button{
+    width: 150px;
+    height: 35px;
+    border-radius: 10px;
+    background:honeydew;
+    border: 1px solid black;
+    font-family: 'Poppins', sans-serif;
+    margin: 5px 0;
+
+
+}
+
+@media (max-width: 560px) {
+    .tarjetas, .tarjetas-ataques {
+        flex-direction: column;
+    }
+
+}
+
+@media (max-width: 475px) {
+    #ver-mapa div{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+
+    }
+
+}
